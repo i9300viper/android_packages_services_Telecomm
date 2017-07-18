@@ -14,6 +14,10 @@ LOCAL_SRC_FILES += \
 
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res
 
+# Viper Color Engine
+$(warning *** Including Viper Color Engine ***)
+LOCAL_RESOURCE_DIR += vendor/viper/colorengine/$(LOCAL_PATH)/res
+
 LOCAL_PROTOC_OPTIMIZE_TYPE := nano
 LOCAL_PROTOC_FLAGS := --proto_path=$(LOCAL_PATH)/proto/
 LOCAL_PROTO_JAVA_OUTPUT_PARAMS := optional_field_style=accessors
